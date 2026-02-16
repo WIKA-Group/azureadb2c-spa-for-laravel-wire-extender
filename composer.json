@@ -1,0 +1,29 @@
+{
+    "name": "wika-group/azureadb2c-spa-for-laravel-wire-extender",
+    "description": "Use Azure AD B2C single sign-on with Laravel Wire Extender components",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WIKA Group",
+            "email": "webapps-admin@wika.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "version": "1.0.0",
+    "require": {
+        "wika-group/azureadb2c-spa-for-laravel": "^1.0",
+        "wire-elements/wire-extender": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WikaGroup\\AzureAdB2cWireExtender\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WikaGroup\\AzureAdB2cWireExtender\\AzureAdB2cWireExtenderServiceProvider"
+            ]
+        }
+    }
+}
