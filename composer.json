@@ -9,7 +9,7 @@
         }
     ],
     "minimum-stability": "stable",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "require": {
         "wika-group/azureadb2c-spa-for-laravel": "^1.0",
         "wire-elements/wire-extender": "^2.0"
