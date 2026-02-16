@@ -2,6 +2,8 @@
 
 This composer package provides the necessary logic to handle Azure B2C logins with MSAL for [wire-extender](https://github.com/wire-elements/wire-extender) components in the front end (with a pop-up) and back-end validation. It requires Livewire and Wire Extender.
 
+> You must [Enable browser session support](https://wire-elements.dev/blog/embed-livewire-components-using-wire-extender).
+
 ## Installation
 **Install the package:**
 ```bash
@@ -47,8 +49,6 @@ Therefore, the provided trait can be used inside the main Livewire component.
 ```php
 use \WikaGroup\AzureAdB2cSpa\Traits\LoginLogoutEvents;
 ```
-
-If you use Wire Extender, you must [Enable browser session support](https://wire-elements.dev/blog/embed-livewire-components-using-wire-extender).
 
 ### Add a button to trigger login or logout
 ```HTML
