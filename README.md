@@ -65,7 +65,9 @@ You can add custom logic by using the emitted events for login and logout:
 
 ```php
 #[On('azureb2c-login-succeeded')]
-public function azureB2cLoginSucceeded(array $user) {}
+public function azureB2cLoginSucceeded() {
+    $userData = session('azureb2c-user-data');
+}
 
 #[On('azureb2c-login-failed')]
 public function azureB2cLoginFailed(string $msg) {}
